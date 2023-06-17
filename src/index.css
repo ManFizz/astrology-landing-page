@@ -1,13 +1,103 @@
+@import url("./assets/webfonts/Montserrat.css");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", serif;
+  overflow: hidden;
+  background: url("./assets/bg.jpg") no-repeat fixed;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo-card {
+  position: absolute;
+  right: 300px;
+  top: 120px;
+  text-align: end;
+  font-size: 1.7em;
+  line-height: 25px;
+  color: white;
+  background: rgba(21,21,21,.3);
+  padding: 0 30px;
+  border-radius: 20px;
+}
+
+.CourseContent {
+  font-size: 24px;
+  max-width: 600px;
+}
+
+.switcher ul {
+  font-size: 24px;
+  max-width: 600px;
+  text-align: start;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.switcher ul li {
+  background: #FF6849;
+  margin: 13px 20px;
+  font-size: 44px;
+  font-weight: 500;
+  border-radius: 50%;
+  --size: 56px;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  text-align: center;
+  box-shadow: 2px 0 5px 6px #FF6849;
+  color: black;
+}
+.switcher ul li:hover {
+  cursor: pointer;
+}
+
+.course-id {
+}
+
+.course-name {
+}
+
+.course-description {
+}
+
+.switcher h2 {
+  text-align: start;
+}
+
+.logo {
+  flex: 1 0;
+  max-width: 800px;
+  margin-bottom: -10px;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  z-index: -1;
+}
+
+.button {
+  padding: 20px 50px;
+  font-weight: normal;
+  font-size: 1.2em;
+  background: rgb(255,104,73);
+  border-radius: 70px;
+  box-shadow: 0 0 34px 17px rgba(255,104,73,.28);
+  border-color: rgba(255,104,73,.68);
+}
+
+.text-logo {
+  color: rgb(255,104,73);
+  position: absolute;
+  font-weight: 600;
+  font-size: 30px;
+  left: 60px;
+  top: 5px;
+  text-decoration: none;
+}
+
+.error-box {
+  color: red;
 }
